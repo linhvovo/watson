@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://da5n80xkfvlh8"]
+
+[ext_resource type="Texture2D" uid="uid://27eu1bje4rwh" path="res://icon.svg" id="1_qd7xe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sl7l0"]
+size = Vector2(128, 128)
+
+[node name="Star" type="StaticBody2D"]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_sl7l0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.853744, 0.853744, 7.70092e-07, 1)
+texture = ExtResource("1_qd7xe")

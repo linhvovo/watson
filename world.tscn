@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://c15usnh5a0qvp"]
+
+[ext_resource type="PackedScene" uid="uid://drifvjlm3r1hp" path="res://kill_zone.tscn" id="1_gm8lq"]
+[ext_resource type="PackedScene" uid="uid://bti5v2t8jgv4g" path="res://floor.tscn" id="1_jv1gc"]
+[ext_resource type="PackedScene" uid="uid://da5n80xkfvlh8" path="res://star.tscn" id="1_xjcku"]
+[ext_resource type="PackedScene" uid="uid://jd7ulcx16216" path="res://player.tscn" id="3_u4ogq"]
+
+[node name="World" type="Node2D"]
+
+[node name="KillZone" parent="." instance=ExtResource("1_gm8lq")]
+position = Vector2(581, 1009)
+
+[node name="Star" parent="." instance=ExtResource("1_xjcku")]
+position = Vector2(747, 340)
+
+[node name="Floor" parent="." instance=ExtResource("1_jv1gc")]
+position = Vector2(696, 586)
+
+[node name="Player" parent="." instance=ExtResource("3_u4ogq")]
+position = Vector2(235, 412)

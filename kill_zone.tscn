@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://drifvjlm3r1hp"]
+
+[ext_resource type="Texture2D" uid="uid://27eu1bje4rwh" path="res://icon.svg" id="1_45j2d"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6urq1"]
+size = Vector2(2560, 128)
+
+[node name="KillZone" type="StaticBody2D"]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6urq1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.645805, 0.0646122, 0.184593, 1)
+scale = Vector2(20, 1)
+texture = ExtResource("1_45j2d")
